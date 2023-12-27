@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #5072A7;
+}
+
+.container {
+    text-align: center;
+}
+
+fieldset {
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+fieldset.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+h2 {
+    margin: 0;
+}
+.uploadlabel{
+    color: #5072A7;
+    width: 100%;
+    min-height: 100px;
+   cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 3px dashed #5072A7;
+}
+.upload-icon{
+    font-size: 50px;
+    color: #5072A7;
+
+}

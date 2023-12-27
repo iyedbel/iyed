@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="COUR.CSS">
+</head>
+<body>
+   
+
+    <fieldset>
+       
+        <ul>
+            <H2><i class="fas fa-info-circle"></i>  INFORMATION SUR LE COURS</H2>
+            <li><h5>intitule du cours:</h5> <p>calcule NUMERIQUE</p></li>
+            <li><h5>public cible:</h5> <p>2eme anne licence</p></li>
+            <li><h5>cote enseignement:</h5> <p>methodologique(UEM)</p></li>
+            <li><h5>coefficient:</h5> <p>2</p></li>
+            <li><h5>credit:</h5> <p>4</p></li>
+            <li><h5>volume horaire de travail requis/semaine:</h5> <p>3h/semaine(cours+TP)</p></li>
+            <li><h5>mode d evaluation:</h5><li><p>1.Examen (60%) :un examen ecrit</p></li> <li><p>2.controle continu (40%) :test tp (matlab)</p></li></li>
+            <li><h5>enseignant de la matiere:</h5> <p>Dr.MIDOUN , Dr.TOBJI</p></li>
+            <li><h5>Contacts:</h5><li><p>1.pour les delege de groupes:k_midoun@esi.dz</p></li> <li><p>2.pour les etudiants :midoun_khadidja@univ-blida.dz</p></li></li>
+        </ul>
+    </fieldset>
+
+   
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var fieldsets = document.querySelectorAll('fieldset');
+
+            fieldsets.forEach(function (fieldset, index) {
+                setTimeout(function () {
+                    fieldset.classList.add('appear');
+                }, index * 200);
+            });
+        });
+    </script>
+</body>
+</html>

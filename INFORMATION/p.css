@@ -1,0 +1,76 @@
+body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-around; 
+  
+background: #5072A7;
+}
+
+fieldset {
+  width: 80%; 
+  margin: 20px; 
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+h3{
+  text-transform: uppercase;
+}
+/* styles.css */
+fieldset {
+opacity: 0;
+transform: translateY(20px);
+transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.appear {
+opacity: 1;
+transform: translateY(0);
+}
+
+/* Add styles for the typing animation */
+h3::after {
+content: "|"; /* Display a cursor after the text */
+animation: blink-caret 0.75s infinite; /* Make the cursor blink */
+}
+
+@keyframes blink-caret {
+50% {
+    opacity: 0;
+}
+}
+/* Example: styles.css */
+
+@font-face {
+font-family: 'Lato';
+src: url('path/to/fonts/Lato-Regular.woff2') format('woff2'), /* Change the path accordingly */
+     url('path/to/fonts/Lato-Regular.woff') format('woff'); /* Change the path accordingly */
+font-weight: 400; /* Specify the font weight */
+font-style: normal; /* Specify the font style */
+}
+
+@font-face {
+font-family: 'Lato';
+src: url('path/to/fonts/Lato-Bold.woff2') format('woff2'), /* Change the path accordingly */
+     url('path/to/fonts/Lato-Bold.woff') format('woff'); /* Change the path accordingly */
+font-weight: 700; /* Specify the font weight */
+font-style: normal; /* Specify the font style */
+}
+
+/* Add additional @font-face rules for other weights and styles if needed */
+/* Example: styles.css */
+
+body {
+font-family: 'Lato', sans-serif;
+}
+
+/* Apply Lato to specific elements as needed */
+h1, h2, h3, p {
+font-family: 'Lato', sans-serif;
+}
+
+

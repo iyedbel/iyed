@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="p.css">
+</head>
+<body>
+    <fieldset>
+        <h3><i class="fas fa-info-circle"></i> Information detaillees</h3>
+        <p>pays</p>
+        <p>ville</p>
+        <p>fuseau horaire</p>
+    </fieldset>
+
+    <fieldset>
+        <h3><i class="fas fa-cogs"></i> Divers</h3>
+        <a href="">message des forums</a><br>
+        <a href="">discussion de forum</a><br>
+    </fieldset>
+
+    <fieldset>
+        <h3><i class="fas fa-info"></i> Information detaillees du cours</h3>
+        <h5>Profil de cours</h5>
+        <a href="">Rappel d'atomistique</a><br>
+        <a href="">Chemin analytique</a><br>
+        <a href="">Chimie generale pharmaceutique</a><br>
+        <a href="">Chimie generale copie 2</a><br>
+        <a href="">Biologie cellulaire le tissu sanguin</a><br>
+    </fieldset>
+
+    <fieldset>
+        <br>
+        <h3><i class="fas fa-user-lock"></i> Information de connexion</h3>
+        <h5>Dernier acces au site</h5>
+        <p>vendredi 12 fevrier 2021, 10:24 (2 ans 309 jours)</p>
+    </fieldset>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var fieldsets = document.querySelectorAll('fieldset');
+
+            fieldsets.forEach(function (fieldset, index) {
+                setTimeout(function () {
+                    fieldset.classList.add('appear');
+                }, index * 200);
+            });
+        });
+    </script>
+</body>
+</html>

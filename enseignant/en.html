@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="en.css">
+</head>
+<body>
+    <fieldset>
+        <h4><i class="fas fa-calculator"></i> CALCULE NUMERIQUE</h4>
+        <button class="custom-button" onclick="openPage('file:///C:/Users/Aures/Desktop/COURS%20PAGE/COUR.HTML')">semestre s1</button>
+    </fieldset>
+
+    <fieldset>
+        <h4><i class="fas fa-info-circle"></i> INFOGRAPHY M1 SIR</h4>
+        <button class="custom-button" onclick="openPage('file:///C:/Users/Aures/Desktop/COURS%20PAGE/COUR.HTML')">master 1 SIR </button>
+    </fieldset>
+
+    <fieldset>
+        <h4><i class="fas fa-code"></i> PROGRAMATION AVANCEE POUR LE WEB</h4>
+        <button class="custom-button" onclick="openPage('file:///C:/Users/Aures/Desktop/COURS%20PAGE/COUR.HTML')">S5</button>
+    </fieldset>
+
+    <script>
+        function openPage(url) {
+            window.location.href = url;
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var fieldsets = document.querySelectorAll('fieldset');
+
+            fieldsets.forEach(function (fieldset, index) {
+                setTimeout(function () {
+                    fieldset.classList.add('appear');
+                }, index * 200);
+            });
+        });
+    </script>
+</body>
+</html>
